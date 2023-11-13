@@ -1,0 +1,19 @@
+{
+  "name": "v2-subgraph-query",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "start-server": "pm2 start src/index.js --name v2-subgraph-query",
+    "stop-server": "pm2 stop src/index.js"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "axios": "^1.6.1",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
+    "node-fetch": "^3.3.2"
+  }
+}
