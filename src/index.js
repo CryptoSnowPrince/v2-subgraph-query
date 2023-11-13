@@ -51,9 +51,9 @@ async function main() {
         setInterval(async () => {
             logMessage(`querySubgraph ${idx}`);
             idx++;
-            const id = idx % 100 + 1;
+            const id = idx % 50 + 1;
             logMessage(`value ${id}`);
-            querySubgraph(MY_QUERY, { recent: idx })
+            querySubgraph(MY_QUERY, { recent: id })
                 .then(data => logMessage(data))
                 .catch(error => logMessage(error));
         }, 500);
